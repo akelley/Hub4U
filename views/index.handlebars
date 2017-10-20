@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="main">
+    <div id="titlediv">
+      <img src="../images/Red-bike.png" alt="" id="bike-logo">
+      <h3 id="subtitle">Find your perfect ride</h3>
+    </div>
+    <div id="form">
+      <div id="input-one">
+        I am coming from <input type="text" name="" id="start" placeholder="my location">
+      </div>
+      <div id="input-two">
+        and I am going to <input type="text" name="" id="end" placeholder="my destination">
+      </div>
+      <input type="button" value="Let's Go!" id="submit"/>
+    </div>
+    <div id="details" class="hide">
+      <div id="bikes">The closest Hubway station to your location is <span id="bike-name"></span>.  There are
+        <span id="num-bikes"></span> bikes available right now.</div>
+      <div id="docks">The closest Hubway station to your destination is <span id="dock-name"></span>.  There are
+        <span id="num-docks"></span> docks available right now.</div>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="routeDetails" class="hide">Your trip is <span id="distance"></span> miles long and will take approximately
+      <span id="duration"></span> minutes.</div>
+
+    <div id="direction-panel"></div>
+  </div>
+
+  <footer>
+    <div id="copyright">&copy; 2017 Hub4U</div>
+  </footer>
+</div>
+

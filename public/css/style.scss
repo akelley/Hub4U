@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lobster|Montserrat');
+
+$blue: #95ddd1;
+$red: #b12318;
+$white: #fff;
+$dark-teal: #3D9999;
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  @include flex;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background: $blue;
+
+  .wrapper {
+    min-height: 100vh;
+    width: 100%;
+    @include flex;
+
+    .main {
+      @include flex;
+      flex: 1;
+      justify-content: center;
+      color: $white;
+      border-radius: 8px;
+
+      #titlediv {
+        display: flex;
+        align-items: center;
+
+        #bike-logo {
+          margin: 0;
+        }
+
+        #subtitle {
+          font-size: 4em;
+          font-family: 'Cookie', cursive;
+          margin: 0;
+        }
+      }
+
+      #form {
+        font-size: 1em;
+        display: flex;
+
+        input[type=text] {
+          margin: 0.8em 2em 1.8em 0.4em;
+          border: none;
+          border-bottom: 2px solid $white;
+          outline: none;
+          background: $blue;
+          width: 13em;
+
+          &::placeholder {
+            color: $dark-teal;
+          }
+        }
+
+        #submit {
+          padding: 0.6em;
+          padding-bottom: 1.7em;
+          font-size: 1.3em;
+          height: 2em;
+          border: none;
+          border-radius: 8px;
+          font-family: 'Lobster', cursive;
+          outline: none;
+          background: $red;
+          color: $white;
+          margin: 0;
+        }
+      }
+
+      #details {
+        margin-bottom: 1em;
+
+        #docks {
+          margin-top: 0.8em;
+        }
+      }
+
+      #map-canvas {
+        height: 400px;
+        margin: 0;
+        width: 800px;
+        padding: 0;
+      }
+
+      #routeDetails {
+        margin: 0.8em 0;
+      }
+
+      #direction-panel {
+        width: 600px;
+      }
+    }
+
+    footer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3em;
+      color: $white;
+
+      #copyright {
+        margin: 1.3em;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+
+    .wrapper {
+
+      .main {
+
+        #titlediv {
+          width: 100vw;
+          flex-direction: column;
+
+          #subtitle {
+            font-size: 2.5em !important;
+          }
+        }
+
+        #form {
+          width: 100vw;
+          flex-direction: column;
+          align-items: center;
+
+          #input-one {
+            margin-top: 1em;
+          }
+
+          #submit {
+            margin-bottom: 1.3em !important;
+          }
+        }
+
+        #details {
+          width: 100vw;
+        }
+
+        #map-canvas {
+          width: 100vw;
+        }
+
+        #routeDetails {
+          margin: 0.8em 0;
+        }
+
+        #direction-panel {
+          width: 100vw;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  #input-one, #input-two {
+    margin-left: 2em;
+  }
+}

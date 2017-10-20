@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Cookie|Lobster|Montserrat");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background: #95ddd1; }
+  body .wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .wrapper .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+      color: #fff;
+      border-radius: 8px; }
+      body .wrapper .main #titlediv {
+        display: flex;
+        align-items: center; }
+        body .wrapper .main #titlediv #bike-logo {
+          margin: 0; }
+        body .wrapper .main #titlediv #subtitle {
+          font-size: 4em;
+          font-family: 'Cookie', cursive;
+          margin: 0; }
+      body .wrapper .main #form {
+        font-size: 1em;
+        display: flex; }
+        body .wrapper .main #form input[type=text] {
+          margin: 0.8em 2em 1.8em 0.4em;
+          border: none;
+          border-bottom: 2px solid #fff;
+          outline: none;
+          background: #95ddd1;
+          width: 13em; }
+          body .wrapper .main #form input[type=text]::placeholder {
+            color: #3D9999; }
+        body .wrapper .main #form #submit {
+          padding: 0.6em;
+          padding-bottom: 1.7em;
+          font-size: 1.3em;
+          height: 2em;
+          border: none;
+          border-radius: 8px;
+          font-family: 'Lobster', cursive;
+          outline: none;
+          background: #b12318;
+          color: #fff;
+          margin: 0; }
+      body .wrapper .main #details {
+        margin-bottom: 1em; }
+        body .wrapper .main #details #docks {
+          margin-top: 0.8em; }
+      body .wrapper .main #map-canvas {
+        height: 400px;
+        margin: 0;
+        width: 800px;
+        padding: 0; }
+      body .wrapper .main #routeDetails {
+        margin: 0.8em 0; }
+      body .wrapper .main #direction-panel {
+        width: 600px; }
+    body .wrapper footer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3em;
+      color: #fff; }
+      body .wrapper footer #copyright {
+        margin: 1.3em; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+@media (max-width: 768px) {
+  body .wrapper .main #titlediv {
+    width: 100vw;
+    flex-direction: column; }
+    body .wrapper .main #titlediv #subtitle {
+      font-size: 2.5em !important; }
+  body .wrapper .main #form {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center; }
+    body .wrapper .main #form #input-one {
+      margin-top: 1em; }
+    body .wrapper .main #form #submit {
+      margin-bottom: 1.3em !important; }
+  body .wrapper .main #details {
+    width: 100vw; }
+  body .wrapper .main #map-canvas {
+    width: 100vw; }
+  body .wrapper .main #routeDetails {
+    margin: 0.8em 0; }
+  body .wrapper .main #direction-panel {
+    width: 100vw; } }
+@media (max-width: 400px) {
+  #input-one, #input-two {
+    margin-left: 2em; } }
+
+/*# sourceMappingURL=style.css.map */
