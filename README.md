@@ -1,5 +1,5 @@
 # Hub4U
-Trip planner using Hubway and Google Maps APIs to show Hubway station bike & dock availabilities.
+Trip planner using Sequelize ORM, Hubway and Google Maps APIs to retrieve and display Hubway station bike & dock availabilities.
 
 Please find the application deployed here:
 
